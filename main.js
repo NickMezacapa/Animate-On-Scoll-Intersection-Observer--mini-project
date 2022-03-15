@@ -4,7 +4,9 @@ let titles = [...document.querySelectorAll('h2')];
 let paragraphs = [...document.querySelectorAll('p')];
 
 
-/* Declare options object to use for intersection observer parameter, will need the rootMargin and a threshold. This will declare where and when the observed information will be observed and displayed. The rootMargin of 0px will make the entire viewport our observer. When 25% of the image is being observed, we will adjust styling for the element to appear on the page */
+/* 
+Declare options object to use for intersection observer parameter, will need the rootMargin and a threshold. This will declare where and when the observed information will be observed and displayed. The rootMargin of 0px will make the entire viewport our observer. When 25% of the image is being observed, we will adjust styling for the element to appear on the page 
+*/
 let options = {
     rootMargin: '0px',
     threshold: .25
