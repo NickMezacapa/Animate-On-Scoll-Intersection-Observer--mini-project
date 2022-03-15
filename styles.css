@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200&display=swap');
+@font-face {
+    font-family: porscheItalic;
+    src: url(font/911porschav3semital.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Smooch Sans', sans-serif;
+    color: whitesmoke;
+}
+body {
+    background-color: #161616;
+    height: 100%;
+    width: 100%;
+}
+.headlineContainer {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+    width: 50%;
+}
+.headlineLogo {
+    font-family: porscheItalic;
+    margin-top: 2rem;
+    color: rgb(250, 48, 48);
+}
+.logoContainer {
+    position: absolute;
+    top: 12%;
+    left: 80%;
+    height: 170px;
+}
+.logoContainer img{
+    height: 100%;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin-top: 10rem;
+    overflow: hidden;
+}
+.img-wrap {
+    position: relative;
+    top: 40%;
+    height: 40%;
+    width: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+.img-wrap.active {
+    width: 40vw;
+    opacity: 1;
+    transition: opacity 0s, width 2s;
+}
+.img-wrap.active > .img {
+    transform: scale(1);
+    transition: 1s ease-out;
+}
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1.6);
+}
+h2, p {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    z-index: 2;
+    transition: .2s;
+}
+h2 {
+    top: 50%;
+    font-family: porscheItalic;
+    font-size: 30px;
+}
+h2 span {
+    display: block;
+}
+p {
+    top: 65%;
+    width: 30%;
+    font-size: 20px;
+}
+h2.active, p.active {
+    opacity: 1;
+    transition: opacity 3s;
+}
