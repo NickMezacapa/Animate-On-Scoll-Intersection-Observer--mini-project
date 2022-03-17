@@ -2,6 +2,9 @@
 ## Summary 
 This is a simple mini project showcasing scroll animation effects using Intersection Observer. Intersection Observer is typically much friendlier on performance in comparison to using a scroll listener. The Intersection Observer is a native JavaScript API that provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport. It can be used for scroll animations, lazy loading images, infinite scroll, and much more. Pull Requests welcomed!
 
+## Live Site
+https://nickmezacapa.github.io/Animate-On-Scoll-Intersection-Observer--mini-project/
+
 ## Task 
 Build a simple landing page web application that uses the intersection observer to implement UI animations. The animations should not all happen at the same time, but according to the user's scroll progress on the page.
 
