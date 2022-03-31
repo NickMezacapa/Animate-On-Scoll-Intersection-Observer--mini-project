@@ -6,7 +6,7 @@ This is a simple mini project showcasing scroll animation effects using Intersec
 https://nickmezacapa.github.io/Animate-On-Scoll-Intersection-Observer--mini-project/
 
 ## Task 
-Build a simple landing page web application that uses the intersection observer to implement UI animations. The animations should not all happen at the same time, but according to the user's scroll progress on the page.
+Build a simple landing page web application that uses intersection observer to implement UI animations. The animations should not all happen at the same time, but according to the user's scroll progress on the page.
 
 ## Summary of Tech Stack
 No frameworks, libraries, or plugins are necessary. Use of JavaScript's built in tool, intersection observer, was utilized to create these effects. The general concept behind intersection observer is being a way to watch a child element and be informed when it enters the bounding box of one of its parents. It is most commonly going to be used in relation to the target element scrolling into view in the root element. In my example, when my image elements enter the viewport and 25% of the image is intersecting, the styling is manipulated to allow the image (and CSS transition) to appear on the screen. This criteria is declared in the options object of my JS source code.
